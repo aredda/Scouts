@@ -7,7 +7,7 @@
 
 <h2>Structure</h2>
 <p>For the Java source files, I divided the project into four main packages:<p/>
-<h3>• Models</h3>
+<h3>- Models</h3>
 <ul>
   <li><b>Norms</b><i> (basically a package of Enums)</i>
     <ul>
@@ -40,18 +40,18 @@
   <li><b>DataController</b></li>
   <li><b>Entity</b></li>
 </ul>
-<h3>• Helpers</h3>
+<h3>- Helpers</h3>
 <ul>
   <li>HelperMessage</li>
   <li>HelperReflection</li>
   <li>HelperResource</li>
 </ul>
-<h3>• Adapters</h3>
+<h3>- Adapters</h3>
 <ul>
   <li>TriAdapter</li>
   <li>FlexAdapter</li>
 </ul>
-<h3>• Activities</h3>
+<h3>- Activities</h3>
 <ul>
   <li>Home</li>
   <li>Authentication</li>
