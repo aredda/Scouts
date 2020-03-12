@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_tabLink"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorMainDark"
+    android:textColor="#fff"
+    android:text="Tab Item"
+    android:textSize="@dimen/h3"
+    android:textAlignment="center"
+    android:padding="@dimen/m1"
+    android:textStyle="bold"
+    android:layout_weight="1"
+    />

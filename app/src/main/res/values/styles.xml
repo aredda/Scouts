@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorMainDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Head theme -->
+    <style name="tvHeaderTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorMain</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/h1</item>
+        <item name="android:padding">@dimen/m1</item>
+    </style>
+    <!-- Sub Header theme -->
+    <style name="tvSubHeaderTheme">
+        <item name="android:padding">@dimen/m3</item>
+        <item name="android:textSize">@dimen/h2</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <!-- Main Button theme -->
+    <style name="btnMainTheme">
+        <item name="android:background">@drawable/button_rounded</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingLeft">@dimen/m1</item>
+        <item name="android:paddingRight">@dimen/m1</item>
+        <item name="android:paddingTop">@dimen/m2</item>
+        <item name="android:paddingBottom">@dimen/m2</item>
+        <item name="android:textSize">@dimen/h2</item>
+    </style>
+    <!-- Label theme -->
+    <style name="lblInputTheme">
+        <item name="android:textColor">@color/colorMainDark</item>
+        <item name="android:textSize">@dimen/h2</item>
+        <item name="android:padding">@dimen/m3</item>
+        <item name="android:layout_marginTop">@dimen/m1</item>
+    </style>
+    <style name="lblLight1">
+        <item name="android:textColor">@color/colorMainLight</item>
+        <item name="android:textSize">@dimen/h4</item>
+        <item name="android:padding">@dimen/m4</item>
+    </style>
+    <style name="lbl1">
+        <item name="android:textColor">@color/colorMainDark</item>
+        <item name="android:textSize">@dimen/h3</item>
+        <item name="android:padding">@dimen/m3</item>
+    </style>
+
+</resources>

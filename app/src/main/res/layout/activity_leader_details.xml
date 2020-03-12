@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MemberDetails">
+
+    <!--
+    <include
+        layout="@layout/app_header"
+        android:id="@+id/tv_head"/>
+        -->
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lyt_main"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_marginTop="@dimen/m3"
+                            android:layout_marginLeft="@dimen/m3"
+                            android:id="@+id/img_photo"
+                            android:src="@drawable/logo"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:padding="@dimen/m2"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/lblLight1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="الاسم الكامل"/>
+
+                        <TextView
+                            android:id="@+id/tv_fullName"
+                            style="@style/lbl1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="الاسم الكامل"/>
+
+                        <TextView
+                            style="@style/lblLight1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="الجنسية" />
+
+                        <TextView
+                            android:id="@+id/tv_nationality"
+                            style="@style/lbl1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="الجنسية" />
+
+                        <TextView
+                            style="@style/lblLight1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="تاريخ الازدياد" />
+
+                        <TextView
+                            android:id="@+id/tv_birth"
+                            style="@style/lbl1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="الازدياد" />
+
+                        <TextView
+                            style="@style/lblLight1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="تاريخ الالتحاق" />
+
+                        <TextView
+                            android:id="@+id/tv_enrollment"
+                            style="@style/lbl1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="الالتحاق" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/m2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/lblLight1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="المهمة الحالية" />
+
+                    <TextView
+                        android:id="@+id/tv_unit"
+                        style="@style/lbl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="المهمة الحالية" />
+
+                    <TextView
+                        style="@style/lblLight1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="رقم الهاتف" />
+
+                    <TextView
+                        android:id="@+id/tv_mobile"
+                        style="@style/lbl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="رقم الهاتف" />
+
+                    <!--
+                    <TextView
+                        style="@style/lblLight1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="رؤية لائحة التداريب" /> -->
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:padding="@dimen/m2"
+                android:visibility="gone"
+                android:id="@+id/lv_badges"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_showBadges"
+        android:layout_alignParentBottom="true"
+        style="@style/btnMainTheme"
+        android:layout_margin="@dimen/m2"
+        android:text="رؤية لائحة التداريب"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MemberDetails">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:paddingTop="@dimen/m3"
+                    android:paddingLeft="@dimen/m3"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_photo"
+                        android:src="@drawable/logo"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:text="Title"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/h3"
+                        android:background="@color/colorAccent"
+                        android:paddingVertical="@dimen/m3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="@dimen/m2"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/lblLight1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="الاسم الكامل"/>
+
+                    <TextView
+                        android:id="@+id/tv_fullName"
+                        style="@style/lbl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="الاسم الكامل"/>
+
+                    <TextView
+                        style="@style/lblLight1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="الجنسية" />
+
+                    <TextView
+                        android:id="@+id/tv_nationality"
+                        style="@style/lbl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="الجنسية" />
+
+                    <TextView
+                        style="@style/lblLight1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="الازدياد" />
+
+                    <TextView
+                        android:id="@+id/tv_birth"
+                        style="@style/lbl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="الازدياد" />
+
+                    <TextView
+                        style="@style/lblLight1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="الالتحاق" />
+                    
+                    <TextView
+                        android:id="@+id/tv_enrollment"
+                        style="@style/lbl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="الالتحاق" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/m2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/lblLight1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="الوحدة الحالية" />
+                
+                <TextView
+                    android:id="@+id/tv_unit"
+                    style="@style/lbl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="الوحدة الحالية" />
+
+                <TextView
+                    style="@style/lblLight1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="العنوان" />
+                
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/lbl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="العنوان" />
+
+                <TextView
+                    style="@style/lblLight1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="حول الأب" />
+                
+                <TextView
+                    android:id="@+id/tv_father"
+                    style="@style/lbl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="معلومات الأب" />
+
+                <TextView
+                    style="@style/lblLight1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="حول الأم" />
+                
+                <TextView
+                    android:id="@+id/tv_mother"
+                    style="@style/lbl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="معلومات الأم" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UnitDetails">
+
+    <include layout="@layout/app_header"
+        android:id="@+id/tv_head"/>
+
+    <include
+        layout="@layout/header_with_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_head"
+        />
+
+    <RadioGroup
+        android:layout_below="@+id/tv_subHead"
+        android:id="@+id/lyt_tabLinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@id/rb_members"
+        android:padding="@dimen/m4">
+
+        <RadioButton
+            android:layout_marginHorizontal="@dimen/m3"
+            android:id="@+id/rb_leaders"
+            android:textColor="@color/colorMainDark"
+            android:textSize="@dimen/h3"
+            android:text="القادة"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_marginHorizontal="@dimen/m3"
+            android:id="@+id/rb_members"
+            android:textColor="@color/colorMainDark"
+            android:textSize="@dimen/h3"
+            android:text="الأفراد"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lv_members"
+        android:layout_below="@id/lyt_tabLinks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        style="@style/btnMainTheme"
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/m1"
+        android:text="تسجيل عضو جديد" />
+
+</RelativeLayout>

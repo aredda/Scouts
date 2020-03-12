@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MemberList">
+
+    <include
+        layout="@layout/app_header"
+        android:id="@+id/tv_head"
+        />
+
+    <EditText
+        android:id="@+id/tv_search"
+        android:layout_margin="@dimen/m3"
+        android:padding="@dimen/m3"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint= "بحث بالاسم العائلي"
+        android:layout_below="@id/tv_head" />
+
+    <ListView
+        android:padding="@dimen/m3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_search"
+        android:id="@+id/lv_members" />
+
+</RelativeLayout>

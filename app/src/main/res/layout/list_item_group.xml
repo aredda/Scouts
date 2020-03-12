@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="viewEnd"
+    android:paddingVertical="@dimen/m3"
+    android:paddingHorizontal="@dimen/m1">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اسم المجموعة"
+        android:textSize="@dimen/h2"
+        android:textStyle="bold"
+        android:textColor="@color/colorMain"
+        android:paddingVertical="@dimen/m4"/>
+
+    <TextView
+        android:id="@+id/tv_subHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_header"
+        android:layout_alignParentRight="true"
+        android:text="قائد المجموعة"
+        android:textSize="@dimen/h3"
+        android:textColor="@color/colorMainLight"
+        />
+
+    <TextView
+        android:id="@+id/tv_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@id/tv_subHeader"
+        android:text="عدد الوحدات"
+        android:textSize="@dimen/h4"
+        android:textColor="@color/colorMainDark"
+        />
+
+</RelativeLayout>

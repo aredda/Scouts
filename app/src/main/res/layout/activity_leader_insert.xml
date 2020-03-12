@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LeaderInsert">
+
+    <include
+        android:id="@+id/tv_head"
+        layout="@layout/app_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_head"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/lyt_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/m2">
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="رقم المنخرط:" />
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="رقم المنخرط" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="الاسم العائلي:" />
+
+            <EditText
+                android:id="@+id/et_lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="الاسم العائلي" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="الاسم الشخصي:" />
+
+            <EditText
+                android:id="@+id/et_firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="الاسم الشخصي" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="الجنسية:" />
+
+            <EditText
+                android:id="@+id/et_nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="الجنسية" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الجنس:" />
+
+            <Spinner
+                android:id="@+id/spn_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مكان الازدياد:" />
+
+            <EditText
+                android:id="@+id/et_birthPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="مكان الازدياد" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="تاريخ الازدياد:" />
+
+            <DatePicker
+                android:id="@+id/dp_birthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="تاريخ الالتحاق بالكشفية:" />
+
+            <DatePicker
+                android:id="@+id/dp_enrollment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="رقم الهاتف:" />
+
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="رقم الهاتف" />
+
+            <Button
+                android:id="@+id/btn_pick"
+                style="@style/btnMainTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m3"
+                android:text="اختيار الصورة" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="التداريب:" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_add"
+        style="@style/btnMainTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/m1"
+        android:text="اضافة" />
+
+</RelativeLayout>

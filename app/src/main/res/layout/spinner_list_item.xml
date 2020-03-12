@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_spnItemTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="القيمة هنا"
+        android:padding="@dimen/m2"
+        android:textSize="@dimen/h3"
+        android:textColor="@color/colorMain"
+        />
+
+</LinearLayout>

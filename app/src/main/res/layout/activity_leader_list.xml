@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LeaderList">
+
+    <include
+        layout="@layout/app_header"
+        android:id="@+id/tv_head"/>
+
+    <ListView
+        android:layout_margin="@dimen/m3"
+        android:id="@+id/lv_leaders"
+        android:layout_below="@id/tv_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/btnMainTheme"
+        android:text="+"
+        android:layout_margin="@dimen/m1" />
+
+</RelativeLayout>

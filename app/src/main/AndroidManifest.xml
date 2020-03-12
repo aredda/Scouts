@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.scoutinterfacedesign">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_logo_rounded"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.MemberList"></activity>
+        <activity android:name=".Activities.LeaderDetails"
+            android:exported="true"/>
+        <activity android:name=".Activities.Authentication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.Home" />
+        <activity android:name=".Activities.LeaderList" />
+        <activity android:name=".Activities.LeaderInsert" />
+        <activity android:name=".Activities.MemberDetails" />
+        <activity android:name=".Activities.MemberInsert" />
+        <activity android:name=".Activities.UnitDetails" />
+        <activity android:name=".Activities.UnitInsert" />
+        <activity android:name=".Activities.GroupUnitList" />
+        <activity android:name=".Activities.GroupInsert" />
+        <activity android:name=".Activities.GroupList" />
+    </application>
+
+</manifest>

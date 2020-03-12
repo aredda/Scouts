@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.GroupInsert">
+
+    <TextView
+        android:id="@+id/tv_head"
+        style="@style/tvHeaderTheme"
+        android:text="اضافة مجموعة جديدة" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_head"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/m2">
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="اسم المجموعة" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="اسم المجموعة الجديدة" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="تعيين قائد المجموعة" />
+
+            <Spinner
+                android:id="@+id/spn_groupLeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="تعيين مهام المساعدين" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/m3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/lblInputTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="المهمة"
+                        android:textColor="@color/colorMainLight"
+                        android:textSize="@dimen/h3" />
+
+                    <Spinner
+                        android:id="@+id/spn_mission"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/lblInputTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="القائد"
+                        android:textColor="@color/colorMainLight"
+                        android:textSize="@dimen/h3" />
+
+                    <Spinner
+                        android:id="@+id/spn_leader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_appoint"
+                style="@style/btnMainTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/m3"
+                android:layout_marginTop="@dimen/m3"
+                android:background="@drawable/button_rounded"
+                android:paddingVertical="0dp"
+                android:text="تعيين"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="المجموعة التربوية" />
+
+            <ListView
+                android:id="@+id/lv_crew"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:fadeScrollbars="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_add"
+        style="@style/btnMainTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/m1"
+        android:text="اضافة" />
+
+</RelativeLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MemberInsert">
+
+    <include layout="@layout/app_header"
+        android:id="@+id/tv_head" />
+
+    <ScrollView
+        android:layout_below="@id/tv_head"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/m2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="رقم المنخرط:" />
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="رقم المنخرط" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="الاسم العائلي:" />
+
+            <EditText
+                android:id="@+id/et_lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="الاسم العائلي" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="الاسم الشخصي:" />
+
+            <EditText
+                android:id="@+id/et_firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="الاسم الشخصي" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="الجنسية:" />
+
+            <EditText
+                android:id="@+id/et_nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="الجنسية" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/lblInputTheme"
+                    android:id="@+id/tv_title"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/h3"
+                    android:textColor="@color/colorMainLight"
+                    android:text="نوع" />
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/lblInputTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="الجنس:" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spn_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="مكان الازدياد:" />
+
+            <EditText
+                android:id="@+id/et_birthPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="مكان الازدياد" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="تاريخ الازدياد:" />
+
+            <DatePicker
+                android:id="@+id/dp_birthDate"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="تاريخ الالتحاق بالكشفية:" />
+
+            <DatePicker
+                android:id="@+id/dp_enrollment"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:inputType="textMultiLine"
+                android:text="العنوان:" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="العنوان" />
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="الأب:" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/et_fatherMobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="الهاتف" />
+
+                <EditText
+                    android:id="@+id/et_fatherName"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="اسم الأب" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/lblInputTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="الأم:" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/et_motherMobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="الهاتف" />
+
+                <EditText
+                    android:id="@+id/et_motherName"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="اسم الأم" />
+
+            </LinearLayout>
+
+            <Button
+                style="@style/btnMainTheme"
+                android:layout_marginTop="@dimen/m3"
+                android:id="@+id/btn_pick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اختيار الصورة"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        style="@style/btnMainTheme"
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/m1"
+        android:text="اضافة" />
+
+</RelativeLayout>
